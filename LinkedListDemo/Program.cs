@@ -10,9 +10,10 @@ namespace LinkedListDemo
             LinkedList list = new LinkedList();
 
             Console.WriteLine(" LinkedList Sequence : 56 -> 30 -> 70 \n");
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            list.Add(56);
+            list.Add(70);
+
+            list.InsertAtParticularPosition(1, 30);
             list.Display();
 
             //Console.WriteLine(" Node input Sequence : 70 -> 30 -> 56 \t Output LinkedList Sequence : 56 -> 30 -> 70");
