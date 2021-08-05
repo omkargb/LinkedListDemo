@@ -88,6 +88,17 @@ namespace LinkedListDemo
             return this.head;
         }
 
+        public Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            Console.WriteLine(" First node : {0} Removed.", this.head.data);
+            this.head = this.head.next;
+            return this.head;
+        }
+
         public void Display()
         {
             Node temp = this.head;

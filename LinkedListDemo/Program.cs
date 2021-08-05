@@ -11,9 +11,12 @@ namespace LinkedListDemo
 
             Console.WriteLine(" LinkedList Sequence : 56 -> 30 -> 70 \n");
             list.Add(56);
+            list.Add(30);
             list.Add(70);
 
-            list.InsertAtParticularPosition(1, 30);
+            Console.WriteLine("\n Pop first element. \t output 30 -> 70");
+            list.RemoveFirstNode();
+
             list.Display();
 
             //Console.WriteLine(" Node input Sequence : 70 -> 30 -> 56 \t Output LinkedList Sequence : 56 -> 30 -> 70");
@@ -22,6 +25,7 @@ namespace LinkedListDemo
             //list.AddInReverseOrder(30);
             //list.AddInReverseOrder(56);
             //list.Display();
+            //list.InsertAtParticularPosition(1, 30);
 
         }
     }
