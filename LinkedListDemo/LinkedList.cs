@@ -99,6 +99,26 @@ namespace LinkedListDemo
             return this.head;
         }
 
+        internal Node RemoveLastNode()
+        {
+            if (head == null)
+            {
+                return null;
+            }
+            if (head.next == null)
+            {
+                return null;
+            }
+            Node NewNode = head;
+            while (NewNode.next.next != null)
+            {
+                NewNode = NewNode.next;
+            }
+            Console.WriteLine("\n Last element [{0}] is removed", NewNode.next.data);
+            NewNode.next = null;
+            return head;
+        }
+
         public void Display()
         {
             Node temp = this.head;
