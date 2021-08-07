@@ -85,6 +85,7 @@ namespace LinkedListDemo
             newestNode.next = prev.next;
             prev.next = newestNode;
             Console.WriteLine("\n Element {0} Inserted at position {1}.", data, position);
+            Display();
             return this.head;
         }
 

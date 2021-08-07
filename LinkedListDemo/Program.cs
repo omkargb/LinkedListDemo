@@ -13,10 +13,11 @@ namespace LinkedListDemo
             list.Add(56);
             list.Add(30);
             list.Add(70);
+
             list.Display();
 
-            Console.WriteLine(" Searching for element : 30");
-            list.Search(30);
+            //Console.WriteLine(" Searching for element : 30");
+            //list.Search(30);
 
             //Console.WriteLine("\n Remove last element --> ");
             //list.RemoveLastNode();
