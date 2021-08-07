@@ -13,11 +13,13 @@ namespace LinkedListDemo
             list.Add(56);
             list.Add(30);
             list.Add(70);
-
-            Console.WriteLine("\n Remove last element --> ");
-            list.RemoveLastNode();
             list.Display();
 
+            Console.WriteLine(" Searching for element : 30");
+            list.Search(30);
+
+            //Console.WriteLine("\n Remove last element --> ");
+            //list.RemoveLastNode();
             //add in reverse order
             //list.AddInReverseOrder(70);
             //list.AddInReverseOrder(30);
