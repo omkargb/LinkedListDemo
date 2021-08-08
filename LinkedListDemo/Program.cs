@@ -9,11 +9,13 @@ namespace LinkedListDemo
             Console.WriteLine(" Welcome to LinkedList program.\n");
             LinkedList list = new LinkedList();
 
-            Console.WriteLine(" LinkedList Sequence : 56 -> 30 -> 70 \n");
+            Console.WriteLine(" LinkedList Sequence : 56 -> 30 -> 40 -> 70 \n");
             list.Add(56);
             list.Add(30);
+            list.Add(40);
             list.Add(70);
-
+            list.Display();
+            list.RemoveElement(40);
             list.Display();
 
             //Console.WriteLine(" Searching for element : 30");

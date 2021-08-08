@@ -100,7 +100,7 @@ namespace LinkedListDemo
             return this.head;
         }
 
-        internal Node RemoveLastNode()
+        public Node RemoveLastNode()
         {
             if (head == null)
             {
@@ -130,10 +130,48 @@ namespace LinkedListDemo
                     Console.WriteLine(" Element {0} found at position : {1}", searchValue, position);
                     return this.head;
                 }
-                this.head = this.head.next;
                 position++;
             }
             return null;
+        }
+
+
+        public void RemoveElement(int element)
+        {
+            Node temp = head, prev = null;
+            if (temp != null && temp.data == element)
+            {
+                head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != element)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+                return;
+
+            prev.next = temp.next;
+            Console.WriteLine(" Element : {0} is Removed..", element);
+        }
+
+        public int Size()
+        {
+            Node temp = this.head;
+            int count = 0;
+            if (temp == null)
+            {
+                Console.WriteLine(" LinkedList is empty...");
+                return 0;
+            }
+            while (temp != null)
+            {
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine(" Length of LinkedList is : " + " " + count);
+            return count;
         }
 
         public void Display()
